@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="OIP.jpg"> <!-- Ajoutez cette ligne -->
+    <title>GAME HUNTER X HUNTER</title>
+    <script src="./scripts/main.js" defer></script>
+    <link rel="stylesheet" href="global.css">
+</head>
+<body>
+  <div class="hunter">
+    <img src="OIP-removebg-preview (1).png" alt="Hunter x Hunter Logo">
+    <h1>GAME HUNTER X HUNTER</h1>
+  </div>
+  <section class="container">
+    <div class="you">
+      <div>YOU</div>
+      <div class="img"> <!--id = playerchoice-->
+        <button id="enhancement"><img src="reforcement.webp" alt="enhancement"></button>
+        <button id="manipulation"><img src="manipulation.webp" alt="manipulation"></button>
+        <button id="emission"><img src="emission.png" alt="emission"></button>
+      </div>
+      <div id="scoreactuelJoueur">0</div>
+    </div>
+  
+    <div class="result">PRESS ON A PICTURE TO START THE GAME</div>
+  
+    <div class="computer">
+      <div class="computertitle">COMPUTER</div>
+      <div id="computerSelection"> <img src="Point-dinterrogation-Gris-1-768x768.png" alt="computer selection"></div>
+      <div id="scoreactuelComputer">0</div>
+    </div>
+  </section>
+  
+  <section class="score">
+    <div class="scores">
+      <h3>scores</h3>
+      <div id="yourtotalScore">you</div>
+      <div id="computertotalScore">computer</div>
+    </div>
+
+    <div class="a"><button id="rejouer"><img src="rejouer.jpg" alt="rejouer"></button>replay</div>
+    <div class="b"><button id="effacer"><img src="effacer.jpg" alt="effacer"></button>reset score</div>
+  </section>
+
+  <section class="reglesJeu">
+    <h2>Game rules:</h2>
+    <ul>
+      <li>Enhancement:
+        Beats Emission (The brute strength of Enhancement surpasses the ranged attacks of Emission)
+      </li>
+      <li>Emission:
+        Beats Manipulation (The ranged attacks of Emission can outmaneuver the controls of Manipulation)
+      </li>
+      <li>Manipulation:
+        Beats Enhancement (Manipulation can control or outmaneuver the brute strength of Enhancement)
+      </li>
+    </ul>
+  </section>
+</body>
+</html>
